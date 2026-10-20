@@ -941,6 +941,13 @@ input:checked + .slider:before {
   color: var(--text-primary) !important;
 }
 
+/* Hilangkan focus ring browser pada poligon koridor buffer / path interaktif */
+/* ponytail: global path focus reset; upgrade to class-scoped outline if vector layer keyboard navigation is required */
+.leaflet-container path:focus,
+.leaflet-container path:focus-visible {
+  outline: none;
+}
+
 /* Mobile responsive drawer toggle */
 .mobile-sidebar-toggle {
   display: none;
